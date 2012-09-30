@@ -1,0 +1,9 @@
+wp-config.php
+wp-config.yml
+wp-migrations-config.php
+.DS_Store
+._*
+*~
+wp-content/blogs.dir/
+wp-content/uploads/
+*.sublime*
