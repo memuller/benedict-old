@@ -34,11 +34,11 @@ get_header(); ?>
 
 				<article id="post-0" class="post no-results not-found">
 					<header class="entry-header">
-						<h1 class="entry-title">Aguarde e verá!</h1>
+						<h1 class="entry-title">Aguarde e verá</h1>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<p>Nossas publicações serão inauguradas com conteúdos relacionados à palestra <em>O Design</em>, em breve, muito breve.</p>
+						<p>Nossas publicações serão inauguradas com conteúdos relacionados à palestra <em>O Design</em>, em breve, muito em breve.</p>
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
 
