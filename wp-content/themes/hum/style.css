@@ -121,6 +121,25 @@ blockquote cite {
 	margin-left: 0;
 }
 
+a {
+	color: #ad3626;
+}
+a:hover {
+	color: #c73e2c;
+}
+
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+	color: #c73e2c;
+}
+
+.entry-header .comments-link a:hover,
+.entry-header .comments-link a:focus,
+.entry-header .comments-link a:active {
+	background-color: #c73e2c;
+}
+
 /* =========================================================================
  *   GLOBAL
  * ========================================================================= */
@@ -163,11 +182,11 @@ audio {
 }
 
 .entry-header .comments-link a {
-	-webkit-transition: background-color 700ms;
-	-moz-transition:    background-color 700ms;
-	-ms-transition:     background-color 700ms;
-	-o-transition:      background-color 700ms;
-	transition:         background-color 700ms;
+	-webkit-transition: background-color 400ms;
+	-moz-transition:    background-color 400ms;
+	-ms-transition:     background-color 400ms;
+	-o-transition:      background-color 400ms;
+	transition:         background-color 400ms;
 }
 
 #searchform,
@@ -253,7 +272,7 @@ audio {
 #page #branding #access .current_page_item > a:focus,
 #page #branding #access .current_page_ancestor > a:hover,
 #page #branding #access .current_page_ancestor > a:focus {
-	color: #1982d1;
+	color: #c83e2c;
 }
 
 #access ul ul {
@@ -322,7 +341,8 @@ audio {
 #page #branding #s {
 	width: 72px;
 	background-color: transparent;
-	border-color: rgba( 255, 255, 255, 0.6 );
+	/*border-color: rgba( 255, 255, 255, 0.6 );*/
+	background-color: #fafafa;
 	font-size: 13px;
 	font-weight: 500;
 }
@@ -376,7 +396,7 @@ audio {
 
 #page #branding #site-title a:hover,
 #page #branding #site-title a:focus {
-	color: #1982d1;
+	color: #c83e2c;
 }
 
 #site-description {
@@ -444,7 +464,7 @@ audio {
 }
 .entry-meta a:hover,
 .entry-meta a:focus {
-	color: #1982d1;
+	color: #c83e2c;
 }
 
 #content .hentry {
@@ -626,7 +646,7 @@ article.format-status .entry-content {
 }
 
 .indexed.format-image footer.entry-meta a:hover {
-	color: #1982d1;
+	color: #c83e2c;
 }
 .indexed.format-image footer.entry-meta .edit-link a:hover {
 	color: #fff;
@@ -871,7 +891,7 @@ section.recent-posts .other-recent-posts .comments-link > span {
 }
 
 section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
-	color: #1982d1;
+	color: #c83e2c;
 }
 
 /* =========================================================================
