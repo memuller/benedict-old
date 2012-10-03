@@ -18,6 +18,11 @@ template: twentyeleven
  *   STANDARDIZE ONE-COLUMN
  * ========================================================================= */
 
+body {
+	background-color: #f2f2f2;
+	border-top:3px solid #ad3626;
+}
+
 #page {
 	max-width: 960px;
 }
@@ -403,6 +408,9 @@ audio {
 	width: auto;
 	margin: 0 0 15px;
 	color: #aaa;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	font-size: 11px;
 }
 
 #branding {
@@ -434,9 +442,9 @@ audio {
 
 #content .hentry {
 	background: white;
-	-webkit-box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
-	-moz-box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
-	box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
+	-webkit-box-shadow: 0 1px 4px rgba( 0, 0, 0, 0.1 );
+	-moz-box-shadow: 0 1px 4px rgba( 0, 0, 0, 0.1 );
+	box-shadow: 0 1px 4px rgba( 0, 0, 0, 0.1 );
 	-webkit-border-radius: 3px;
 }
 
