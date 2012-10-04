@@ -18,6 +18,10 @@ template: twentyeleven
  *   STANDARDIZE ONE-COLUMN
  * ========================================================================= */
 
+body {
+	background-color: #ededed;
+}
+
 #page {
 	max-width: 960px;
 }
@@ -121,6 +125,25 @@ blockquote cite {
 	margin-left: 0;
 }
 
+a {
+	color: #ad3626;
+}
+a:hover {
+	color: #c73e2c;
+}
+
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+	color: #c73e2c;
+}
+
+.entry-header .comments-link a:hover,
+.entry-header .comments-link a:focus,
+.entry-header .comments-link a:active {
+	background-color: #c73e2c;
+}
+
 /* =========================================================================
  *   GLOBAL
  * ========================================================================= */
@@ -150,7 +173,14 @@ audio {
  *   COLOR ANIMATIONS
  * ========================================================================= */
 
-#site-title a,
+.entry-title a {
+	-webkit-transition: background 400ms;
+	-moz-transition:    background 400ms;
+	-ms-transition:     background 400ms;
+	-o-transition:      background 400ms;
+	transition:         background 400ms;
+}
+
 #site-description,
 .entry-meta a,
 #access a,
@@ -163,11 +193,11 @@ audio {
 }
 
 .entry-header .comments-link a {
-	-webkit-transition: background-color 700ms;
-	-moz-transition:    background-color 700ms;
-	-ms-transition:     background-color 700ms;
-	-o-transition:      background-color 700ms;
-	transition:         background-color 700ms;
+	-webkit-transition: background-color 400ms;
+	-moz-transition:    background-color 400ms;
+	-ms-transition:     background-color 400ms;
+	-o-transition:      background-color 400ms;
+	transition:         background-color 400ms;
 }
 
 #searchform,
@@ -192,7 +222,7 @@ audio {
  * ========================================================================= */
 
 #branding:hover #site-title a {
-	color: rgba( 0, 0, 0, 0.4 );
+	/*color: rgba( 0, 0, 0, 0.4 );*/
 }
 
 #branding:hover #access a {
@@ -205,7 +235,7 @@ audio {
 }
 
 #branding:hover #site-description {
-	color: #7A7A7A;
+	/*color: #7A7A7A;*/
 }
 
 #branding:hover #searchform {
@@ -253,7 +283,7 @@ audio {
 #page #branding #access .current_page_item > a:focus,
 #page #branding #access .current_page_ancestor > a:hover,
 #page #branding #access .current_page_ancestor > a:focus {
-	color: #1982d1;
+	color: #c83e2c;
 }
 
 #access ul ul {
@@ -322,7 +352,8 @@ audio {
 #page #branding #s {
 	width: 72px;
 	background-color: transparent;
-	border-color: rgba( 255, 255, 255, 0.6 );
+	/*border-color: rgba( 255, 255, 255, 0.6 );*/
+	background-color: #fafafa;
 	font-size: 13px;
 	font-weight: 500;
 }
@@ -366,23 +397,31 @@ audio {
 }
 
 #site-title a {
-	font-size: 2.4em;
-	line-height: 1em;
-	color: rgba( 0, 0, 0, 0.2 );
-	font-weight: bold;
-	margin-right: -4px;
-	text-align: right;
+	position: relative;
+	float: left;
+	display: block;
+	text-align: left;
+	overflow: hidden;
+	text-indent: -9999px;
+	width:152px;
+	height:80px;
+	background: url("images/crafters-board-signs.png") no-repeat -168px 0;
 }
 
-#page #branding #site-title a:hover,
-#page #branding #site-title a:focus {
-	color: #1982d1;
+#site-title a:hover,
+#site-title a:focus {
+	background-position: -168px -80px;
 }
 
 #site-description {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: .33em;
 	width: auto;
-	margin: 0 0 15px;
+	margin: 3em 0 15px !important;
 	color: #aaa;
+	position: relative;
+	float:right;
 }
 
 #branding {
@@ -414,9 +453,9 @@ audio {
 
 #content .hentry {
 	background: white;
-	-webkit-box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
-	-moz-box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
-	box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
+	-webkit-box-shadow: 0 1px 4px rgba( 0, 0, 0, 0.1 );
+	-moz-box-shadow: 0 1px 4px rgba( 0, 0, 0, 0.1 );
+	box-shadow: 0 1px 4px rgba( 0, 0, 0, 0.1 );
 	-webkit-border-radius: 3px;
 }
 
@@ -444,7 +483,7 @@ audio {
 }
 .entry-meta a:hover,
 .entry-meta a:focus {
-	color: #1982d1;
+	color: #c83e2c;
 }
 
 #content .hentry {
@@ -626,7 +665,7 @@ article.format-status .entry-content {
 }
 
 .indexed.format-image footer.entry-meta a:hover {
-	color: #1982d1;
+	color: #c83e2c;
 }
 .indexed.format-image footer.entry-meta .edit-link a:hover {
 	color: #fff;
@@ -871,7 +910,7 @@ section.recent-posts .other-recent-posts .comments-link > span {
 }
 
 section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
-	color: #1982d1;
+	color: #c83e2c;
 }
 
 /* =========================================================================
@@ -880,7 +919,7 @@ section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
 
 @media (min-width: 1200px) {
 	#site-title a {
-		font-size: 3.6em;
+		/*font-size: 3.6em;*/
 	}
 }
 
@@ -903,12 +942,26 @@ section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
 	}
 
 	#site-title {
-		padding-top: 40px;
+		padding-top: 60px;
 		float: none;
 	}
 
 	#site-title a {
-		font-size: 3.6em;
+		float: none;
+		margin: 0 auto;
+		width:284px;
+		height:50px;
+		background-position: -37px -160px !important;
+	}
+
+	#site-title a:hover,
+	#site-title a:focus {
+		background-position: -37px -210px !important;
+	}
+
+	#site-description {
+		float:none;
+		margin-top: 1.5em !important;
 	}
 
 	#page #branding #searchform {
@@ -954,7 +1007,7 @@ section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
 	 *   Undo hovered branding
 	 * ------------------------------------------------------------------------- */
 	#page #branding #site-title a {
-		color: rgba( 0, 0, 0, 0.75 );
+		/*color: rgba( 0, 0, 0, 0.75 );*/
 	}
 
 	#page #branding #access a {
@@ -967,7 +1020,7 @@ section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
 	}
 
 	#page #branding #site-description {
-		color: #7A7A7A;
+		/*color: #7A7A7A;*/
 	}
 
 	#page #branding #searchform {
@@ -979,7 +1032,21 @@ section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
 @media (max-width: 650px) {
 
 	#site-title a {
-		font-size: 2.4em;
+		float: none;
+		margin: 0 auto;
+		width:284px;
+		height:50px;
+		background-position: -37px -160px !important;
+	}
+
+	#site-title a:hover,
+	#site-title a:focus {
+		background-position: -37px -210px !important;
+	}
+
+	#site-description {
+		float:none;
+		margin-top: 1.5em !important;
 	}
 
 	#page #branding #searchform {
@@ -1025,4 +1092,9 @@ section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
 		padding-top: 7px;
 	}
 
+}
+
+.not-found {
+	margin-top:72px;
+	height:300px;
 }
