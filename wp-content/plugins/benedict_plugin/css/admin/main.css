@@ -1,0 +1,54 @@
+#postcustom {display:none !important;}
+
+/* == Periods icon */
+#toplevel_page_casanova-registration div.wp-menu-image a img {display:none !important}
+#toplevel_page_casanova-registration div.wp-menu-image {
+    background: url("../../../../../wp-admin/images/menu.png") no-repeat 0 -33px !important;
+}
+#toplevel_page_casanova-registration:hover div.wp-menu-image,
+#toplevel_page_casanova-registration.wp-has-current-submenu div.wp-menu-image {
+    background-position: 0 -1px !important;
+}
+/*#icon-edit.icon32-posts-period { background: url("../../../../../wp-admin/images/icons32.png") no-repeat -11px -5px !important ; }*/
+
+
+
+/* == Periods icon */
+#menu-posts-period div.wp-menu-image {
+    background: url("../../images/menu.png") no-repeat -60px -33px !important;
+}
+#menu-posts-period:hover div.wp-menu-image,
+#menu-posts-period.wp-has-current-submenu div.wp-menu-image {
+    background-position: -60px -1px !important;
+}
+#icon-edit.icon32-posts-period { background: url("../../../../../wp-admin/images/icons32.png") no-repeat -11px -5px !important ; }
+
+/* == Products icon */
+#menu-posts-product div.wp-menu-image {
+    background: url("../../images/menu.png") no-repeat -30px -33px !important;
+}
+#menu-posts-product:hover div.wp-menu-image,
+#menu-posts-product.wp-has-current-submenu div.wp-menu-image {
+    background-position: -30px -1px !important;
+}
+#icon-edit.icon32-posts-product { background: url("../../../../../wp-admin/images/icons32.png") no-repeat -11px -5px !important ; }
+
+/* == Prizes icon */
+#menu-posts-prize div.wp-menu-image {
+    background: url("../../images/menu.png") no-repeat -90px -33px !important;
+}
+#menu-posts-prize:hover div.wp-menu-image,
+#menu-posts-prize.wp-has-current-submenu div.wp-menu-image {
+    background-position: -90px -1px !important;
+}
+#icon-edit.icon32-posts-prize { background: url("../../../../../wp-admin/images/icons32.png") no-repeat -11px -5px !important ; }
+
+/* == Questions icon */
+#menu-posts-question div.wp-menu-image {
+    background: url("../../images/menu.png") no-repeat -1px -33px !important;
+}
+#menu-posts-question:hover div.wp-menu-image,
+#menu-posts-question.wp-has-current-submenu div.wp-menu-image {
+    background-position: -1px -1px !important;
+}
+#icon-edit.icon32-posts-question { background: url("../../../../../wp-admin/images/icons32.png") no-repeat -11px -5px !important ; }
